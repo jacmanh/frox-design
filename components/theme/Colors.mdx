@@ -1,0 +1,37 @@
+import {Meta, ColorPalette, ColorItem} from '@storybook/blocks';
+import {colors} from "./colors";
+
+<Meta title="Colors"/>
+
+# Colors
+
+Explore the color palette of our design system.
+
+<ColorPalette>
+  <ColorItem
+    colors={colors.dark}
+    title='dark'
+    subtitle='colors.dark'
+  />
+</ColorPalette>
+
+<ColorPalette>
+  <ColorItem
+    colors={colors.light}
+    title='dark'
+    subtitle='colors.light'
+  />
+</ColorPalette>
+
+<ColorPalette>
+  {Object.keys(colors)
+    .filter(key => key !== 'dark' && key !== 'light')
+    .map((key) => (
+      <ColorItem
+        key={key}
+        colors={{[key]: colors[key]}}
+        title={key}
+        subtitle={`colors.${key}`}
+      />
+    ))}
+</ColorPalette>
