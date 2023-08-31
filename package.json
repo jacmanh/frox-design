@@ -24,7 +24,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build --watch",
+    "build": "tsc && vite build",
+    "test": "jest",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -48,6 +49,7 @@
     "@storybook/react-vite": "^7.3.1",
     "@storybook/testing-library": "^0.2.0",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@types/jest": "^29.5.4",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
