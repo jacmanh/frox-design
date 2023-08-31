@@ -1,0 +1,6 @@
+version: '3'
+services:
+  frox-design:
+    build: .
+    ports:
+      - '4002:80'
