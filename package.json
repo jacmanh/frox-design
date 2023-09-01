@@ -32,6 +32,7 @@
     "prettier:format": "prettier --write .",
     "prettier:check": "prettier --check ."
   },
+  "packageManager": "pnpm@8.6.12",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
