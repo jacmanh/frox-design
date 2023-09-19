@@ -4,70 +4,54 @@ import { shadeHexColor } from './utils.ts'
 
 export const darkTheme = {
   ...lightTheme,
-  colors: {
-    text: {
-      default: {
-        interaction: {
+  color: {
+    interaction: {
+      text: {
+        primary: {
           default: colors.dark[1100],
           hover: colors.dark[1100],
           disabled: colors.dark[800]
-        }
-      },
-      dim: {
-        interaction: {
+        },
+        dim: {
           default: colors.dark[0],
           hover: colors.dark[100],
           disabled: colors.dark[800]
-        }
-      },
-      ghost: {
-        interaction: {
+        },
+        ghost: {
           default: colors.dark[0],
           hover: colors.dark[0],
           disabled: colors.dark[500]
         }
-      }
-    },
-    background: {
-      default: {
-        interaction: {
+      },
+      background: {
+        primary: {
           default: colors.violet,
           hover: colors.violet,
           disabled: colors.violet
-        }
-      },
-      dim: {
-        interaction: {
+        },
+        dim: {
           default: colors.dark[500],
           hover: colors.dark[1100],
           disabled: colors.dark[900]
-        }
-      },
-      ghost: {
-        interaction: {
+        },
+        ghost: {
           default: colors.dark[1100],
           hover: colors.dark[1100],
           disabled: colors.dark[1100]
         }
-      }
-    },
-    border: {
-      default: {
-        interaction: {
+      },
+      border: {
+        primary: {
           default: colors.violet,
           hover: shadeHexColor(colors.violet, 0.5),
           disabled: colors.violet
-        }
-      },
-      dim: {
-        interaction: {
+        },
+        dim: {
           default: colors.dark[500],
           hover: shadeHexColor(colors.dark[500], 0.5),
           disabled: colors.dark[900]
-        }
-      },
-      ghost: {
-        interaction: {
+        },
+        ghost: {
           default: colors.dark[500],
           hover: shadeHexColor(colors.dark[500], 0.5),
           disabled: colors.dark[500]

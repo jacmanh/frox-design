@@ -1,13 +1,6 @@
 import { lightTheme } from './lightTheme.ts'
 
 export const commonTheme = {
-  border: {
-    radius: {
-      default: '1rem',
-      sm: '0.25rem',
-      md: '0.5rem'
-    }
-  },
   font: {
     weight: {
       default: 400,
@@ -17,41 +10,40 @@ export const commonTheme = {
       extra: 800
     },
     size: {
+      header: {
+        1: '2.5rem', // 40px
+        2: '2rem', // 32px
+        3: '1.75rem', // 28px
+        4: '1.75rem', // 28px
+        5: '1.5rem', // 24px
+        6: '1.25rem' // 20px
+      },
       mobile: '12px',
       default: '16px',
       xs: '0.75rem', // 12px
       sm: '0.875rem', // 14px
       md: '1rem', // 16px
       lg: '1.25rem' // 20px
+    },
+    lineHeight: {
+      header: {
+        1: '3.75rem', // 60px
+        2: '2.50rem', // 40px
+        3: '2.125rem', // 34px
+        4: '2.125rem', // 34px
+        5: '1.875rem', // 30px
+        6: '1rem' // 16px
+      }
     }
   },
-  header: {
-    h1: {
-      size: '2.5rem', // 40px
-      lineHeight: '3.75rem' // 60px
-    },
-    h2: {
-      size: '2rem', // 32px
-      lineHeight: '2.50rem' // 40px
-    },
-    h3: {
-      size: '1.75rem', // 28px
-      lineHeight: '2.125rem' // 34px
-    },
-    h4: {
-      size: '1.75rem', // 28px
-      lineHeight: '2.125rem' // 34px
-    },
-    h5: {
-      size: '1.5rem', // 24px
-      lineHeight: '1.875rem' // 30px
-    },
-    h6: {
-      size: '1.25rem', // 20px
-      lineHeight: '1rem' // 16px
+  size: {
+    borderRadius: {
+      default: '1rem',
+      sm: '0.25rem',
+      md: '0.5rem'
     }
   },
-  spacing: {
+  space: {
     default: '1rem',
     xs: '0.25rem',
     sm: '0.5rem',

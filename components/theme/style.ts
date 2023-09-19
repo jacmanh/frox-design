@@ -19,32 +19,32 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   h1 {
-    font-size: ${({ theme }) => theme.header.h1.size};
-    line-height: ${({ theme }) => theme.header.h1.lineHeight};
+    font-size: ${({ theme }) => theme.font.size.header[1]};
+    line-height: ${({ theme }) => theme.font.lineHeight.header[1]};
   }
 
   h2 {
-    font-size: ${({ theme }) => theme.header.h2.size};
-    line-height: ${({ theme }) => theme.header.h2.lineHeight};
+    font-size: ${({ theme }) => theme.font.size.header[2]};
+    line-height: ${({ theme }) => theme.font.lineHeight.header[2]};
   }
 
   h3 {
-    font-size: ${({ theme }) => theme.header.h3.size};
-    line-height: ${({ theme }) => theme.header.h3.lineHeight};
+    font-size: ${({ theme }) => theme.font.size.header[3]};
+    line-height: ${({ theme }) => theme.font.lineHeight.header[3]};
   }
 
   h4 {
-    font-size: ${({ theme }) => theme.header.h4.size};
-    line-height: ${({ theme }) => theme.header.h4.lineHeight};
+    font-size: ${({ theme }) => theme.font.size.header[4]};
+    line-height: ${({ theme }) => theme.font.lineHeight.header[4]};
   }
 
   h5 {
-    font-size: ${({ theme }) => theme.header.h5.size};
-    line-height: ${({ theme }) => theme.header.h5.lineHeight};
+    font-size: ${({ theme }) => theme.font.size.header[5]};
+    line-height: ${({ theme }) => theme.font.lineHeight.header[5]};
   }
 
   h6 {
-    font-size: ${({ theme }) => theme.header.h6.size};
-    line-height: ${({ theme }) => theme.header.h6.lineHeight};
+    font-size: ${({ theme }) => theme.font.size.header[6]};
+    line-height: ${({ theme }) => theme.font.lineHeight.header[6]};
   }
   `

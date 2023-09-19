@@ -15,7 +15,7 @@ import {commonTheme} from './theme'
 </div>
 
 export const fontSizes = Object.entries(commonTheme.font.size)
-  .filter(([key]) => key !== 'default' && key !== 'mobile')
+  .filter(([key]) => key !== 'default' && key !== 'mobile' && key !== 'header')
   .map(([, value]) => {
     return Number(value.slice(0, -3)) * 16 + 'px'
   })
@@ -29,9 +29,9 @@ export const Header = styled.h1``
 ## Headers
 
 <div className="sb-unstyled">
-  {Object.keys(commonTheme.header).map((key) => (
+  {Object.keys(commonTheme.font.size.header).map((key) => (
     <div key={key}>
-  <Header as={key}>Headline {key}</Header> <br/>
+  <Header as={`h${key}`}>Headline h{key}</Header> <br/>
 </div>
 ))}
 </div>
