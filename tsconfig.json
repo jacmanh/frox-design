@@ -29,6 +29,7 @@
       "@organisms/*": ["components/organisms/*"]
     }
   },
+  "types": ["vite/client"],
   "include": ["components"],
   "exclude": ["node_modules", "dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
