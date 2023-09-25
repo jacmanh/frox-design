@@ -3,8 +3,10 @@ import { commonTheme } from './theme.ts'
 import { shadeHexColor } from './utils.ts'
 
 export const lightTheme = {
+  base: 'light',
   ...commonTheme,
   color: {
+    default: colors.light[1100],
     interaction: {
       text: {
         primary: {
@@ -56,6 +58,28 @@ export const lightTheme = {
           hover: shadeHexColor(colors.light[500], 0.5),
           disabled: colors.light[500]
         }
+      }
+    }
+  },
+  background: {
+    primary: colors.light[0]
+  },
+  forms: {
+    error: {
+      text: colors.light[0],
+      background: colors.red,
+      border: colors.red
+    },
+    color: {
+      text: {
+        default: colors.light[1000]
+      },
+      placeholder: {
+        default: colors.light[500]
+      },
+      border: {
+        default: colors.light[200],
+        hover: shadeHexColor(colors.violet, 0.5)
       }
     }
   }

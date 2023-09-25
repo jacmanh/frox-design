@@ -1,18 +1,19 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
-/** Insert css variables */
-export const GlobalStyles = createGlobalStyle`
+export const baseCss = css`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
   * {
     box-sizing: border-box;
   }
-  
+
   html {
+    color: ${({ theme }) => theme.color.default};
+    background-color: ${({ theme }) => theme.background.primary};
     font-family: 'Poppins', sans-serif;
     font-size: ${({ theme }) => theme.font.size.mobile};
     font-weight: ${({ theme }) => theme.font.weight.default};
-  
+
     @media (min-width: 1024px) {
       font-size: ${({ theme }) => theme.font.size.default};
     }
@@ -47,4 +48,8 @@ export const GlobalStyles = createGlobalStyle`
     font-size: ${({ theme }) => theme.font.size.header[6]};
     line-height: ${({ theme }) => theme.font.lineHeight.header[6]};
   }
-  `
+`
+
+export const GlobalStyles = createGlobalStyle`
+  ${baseCss}
+`

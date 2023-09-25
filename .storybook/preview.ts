@@ -1,8 +1,20 @@
 import { withThemeFromJSXProvider } from '@storybook/addon-styling'
 import type { Preview } from '@storybook/react'
-import { ThemeProvider } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
-import { darkTheme, GlobalStyles, lightTheme } from '../components'
+import { darkTheme, lightTheme } from '../components'
+import { baseCss } from '../components/theme/style'
+
+const GlobalStyles = createGlobalStyle`
+ ${baseCss}
+
+ #storybook-root {
+   padding: 20px;
+   border-radius: 10px;
+   max-width: 300px;
+   background-color: ${({ theme }) => (theme.base === 'light' ? '#fff' : '#1F2128')}
+ }
+`
 
 export const decorators = [
   withThemeFromJSXProvider({
@@ -18,6 +30,7 @@ export const decorators = [
 
 const preview: Preview = {
   parameters: {
+    layout: 'padded',
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {

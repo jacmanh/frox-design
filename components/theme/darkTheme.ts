@@ -4,7 +4,9 @@ import { shadeHexColor } from './utils.ts'
 
 export const darkTheme = {
   ...lightTheme,
+  base: 'dark',
   color: {
+    default: colors.dark[1100],
     interaction: {
       text: {
         primary: {
@@ -21,6 +23,11 @@ export const darkTheme = {
           default: colors.dark[0],
           hover: colors.dark[0],
           disabled: colors.dark[500]
+        }
+      },
+      placeholder: {
+        primary: {
+          default: colors.dark[500]
         }
       },
       background: {
@@ -56,6 +63,28 @@ export const darkTheme = {
           hover: shadeHexColor(colors.dark[500], 0.5),
           disabled: colors.dark[500]
         }
+      }
+    }
+  },
+  background: {
+    primary: colors.dark[300]
+  },
+  forms: {
+    error: {
+      text: colors.light[0],
+      background: colors.red,
+      border: colors.red
+    },
+    color: {
+      text: {
+        default: colors.dark[900]
+      },
+      placeholder: {
+        default: colors.dark[500]
+      },
+      border: {
+        default: colors.dark[300],
+        hover: shadeHexColor(colors.dark[300], 0.1)
       }
     }
   }

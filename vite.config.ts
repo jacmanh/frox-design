@@ -3,6 +3,7 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import viteSvgr from 'vite-plugin-svgr'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,7 +12,8 @@ export default defineConfig({
     viteSvgr(),
     dts({
       insertTypesEntry: true
-    })
+    }),
+    tsconfigPaths()
   ],
 
   build: {
