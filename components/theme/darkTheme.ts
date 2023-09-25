@@ -75,6 +75,16 @@ export const darkTheme = {
       background: colors.red,
       border: colors.red
     },
+    choices: {
+      color: {
+        default: colors.light[0],
+        active: colors.violet,
+        background: {
+          default: colors.light[0],
+          active: shadeHexColor(colors.dark[200], 0.1)
+        }
+      }
+    },
     color: {
       text: {
         default: colors.dark[900]
@@ -83,7 +93,7 @@ export const darkTheme = {
         default: colors.dark[500]
       },
       border: {
-        default: colors.dark[300],
+        default: shadeHexColor(colors.dark[200], 0.1),
         hover: shadeHexColor(colors.dark[300], 0.1)
       }
     }

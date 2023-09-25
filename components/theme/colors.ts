@@ -29,7 +29,7 @@ export const colors = {
   },
   blue: '#2775FF',
   green: '#50D1B2',
-  violet: '#7747CA',
+  violet: '#7364DB',
   orange: '#EC8C56',
   yellow: '#ECE663',
   indigo: '#5415F1',

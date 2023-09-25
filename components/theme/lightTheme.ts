@@ -70,6 +70,16 @@ export const lightTheme = {
       background: colors.red,
       border: colors.red
     },
+    choices: {
+      color: {
+        default: colors.light[0],
+        active: colors.violet,
+        background: {
+          default: colors.light[0],
+          active: colors.light[200]
+        }
+      }
+    },
     color: {
       text: {
         default: colors.light[1000]
