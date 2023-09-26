@@ -9,6 +9,7 @@ const meta = {
     children: 'Hello World!'
   },
   argTypes: {
+    onClick: { action: 'onClick' },
     $dim: {
       control: {
         type: 'boolean'
