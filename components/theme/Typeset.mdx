@@ -1,17 +1,17 @@
-import {Meta, Story, Typeset} from '@storybook/blocks'
+import { Meta, Story, Typeset } from '@storybook/blocks'
 
-import {styled} from 'styled-components'
+import { styled } from 'styled-components'
 
 import * as ButtonComponent from '../atoms/Button/Button.stories'
 
-import {commonTheme} from './theme'
+import { commonTheme } from './theme'
 
-<Meta title="Typography"/>
+<Meta title="Typography" />
 
 {/* BUG on @addon-styling, not applying styles if no story found in a doc */}
 
-<div style={{display: 'none'}}>
-  <Story of={ButtonComponent.Default}/>
+<div style={{ display: 'none' }}>
+  <Story of={ButtonComponent.Default} />
 </div>
 
 export const fontSizes = Object.entries(commonTheme.font.size)
@@ -29,11 +29,11 @@ export const Header = styled.h1``
 ## Headers
 
 <div className="sb-unstyled">
-  {Object.keys(commonTheme.font.size.header).map((key) => (
+  {Object.keys(commonTheme.font.size.header).map(key => (
     <div key={key}>
-  <Header as={`h${key}`}>Headline h{key}</Header> <br/>
-</div>
-))}
+      <Header as={`h${key}`}>Headline h{key}</Header> <br />
+    </div>
+  ))}
 </div>
 
 ## Text
@@ -43,7 +43,7 @@ export const Header = styled.h1``
 .map(([key, value]) => (
 
 <div key={value}>
-  Poppins - {value} - <code>theme.font.weight.{key}</code> <br/>
-  <Typeset fontFamily="Poppins" fontWeight={value} fontSizes={fontSizes}/>
+  Poppins - {value} - <code>theme.font.weight.{key}</code> <br />
+  <Typeset fontFamily="Poppins" fontWeight={value} fontSizes={fontSizes} />
 </div>
 ))}
