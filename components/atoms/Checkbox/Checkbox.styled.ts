@@ -32,6 +32,7 @@ export const Input = styled.div`
   > span {
     display: flex;
     opacity: 0;
+    visibility: hidden;
     font-size: ${({ theme }) => theme.font.size.lg};
     transition: opacity 0.2s;
   }
@@ -41,6 +42,7 @@ export const Input = styled.div`
 
     > span {
       opacity: 1;
+      visibility: visible;
     }
   }
 `

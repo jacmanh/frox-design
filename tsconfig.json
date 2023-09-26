@@ -7,6 +7,7 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "esModuleInterop": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -23,14 +24,15 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "./",
     "paths": {
-      "frox-design": ["components/index.ts"],
       "@atoms/*": ["components/atoms/*"],
       "@molecules/*": ["components/molecules/*"],
-      "@organisms/*": ["components/organisms/*"]
+      "@organisms/*": ["components/organisms/*"],
+      "@theme/*": ["components/theme/*"],
+      "@tests/*": ["tests/*"],
     }
   },
-  "types": ["vite/client"],
-  "include": ["components"],
+  "types": ["vite/client", "jest", "node", "@testing-library/jest-dom"],
+  "include": ["components", "tests"],
   "exclude": ["node_modules", "dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

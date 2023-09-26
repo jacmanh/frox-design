@@ -8,7 +8,7 @@ export type RadioProps = {
 
 export const Radio = ({ label, ...props }: RadioProps) => (
   <Styled.Container>
-    <Styled.RealInput type="radio" />
+    <Styled.RealInput type="radio" {...props} />
 
     <label htmlFor={props.id || props.name}>
       <Styled.Input>

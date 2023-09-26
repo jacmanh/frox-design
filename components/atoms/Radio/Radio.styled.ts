@@ -32,6 +32,7 @@ export const Input = styled.div`
   > span {
     display: flex;
     opacity: 0;
+    visibility: hidden;
     border-radius: 50%;
     width: 80%;
     height: 80%;
@@ -43,6 +44,7 @@ export const Input = styled.div`
 
     > span {
       opacity: 1;
+      visibility: visible;
       background-color: ${({ theme }) => theme.forms.choices.color.active};
     }
   }
