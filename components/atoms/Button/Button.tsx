@@ -32,7 +32,7 @@ export const Button = styled.button.attrs({ type: 'button' })<ButtonProps>`
 
 const defaultCss = css`
   color: ${({ theme }) => theme.color.interaction.text.primary.default};
-  background-color: ${({ theme }) => theme.color.interaction.background.primary.default};
+  background-color: red;
 
   &:hover {
     color: ${({ theme }) => theme.color.interaction.text.primary.hover};
