@@ -1,18 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  display: flex;
-
-  > label {
-    display: flex;
-    align-items: center;
-    gap: ${({ theme }) => theme.space.sm};
-    font-size: ${({ theme }) => theme.font.size.sm};
-  }
-`
-
 export const RealInput = styled.input`
-  visibility: hidden;
   position: absolute;
   opacity: 0;
 `
@@ -46,6 +34,23 @@ export const Input = styled.div`
       opacity: 1;
       visibility: visible;
       background-color: ${({ theme }) => theme.forms.choices.color.active};
+    }
+  }
+`
+
+export const Container = styled.div`
+  display: flex;
+
+  > label {
+    display: flex;
+    align-items: center;
+    gap: ${({ theme }) => theme.space.sm};
+    font-size: ${({ theme }) => theme.font.size.sm};
+  }
+
+  &:focus-within {
+    ${RealInput} + label > ${Input} {
+      border-color: ${({ theme }) => theme.forms.color.border.hover};
     }
   }
 `
