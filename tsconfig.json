@@ -28,7 +28,7 @@
       "@molecules/*": ["components/molecules/*"],
       "@organisms/*": ["components/organisms/*"],
       "@theme/*": ["components/theme/*"],
-      "@tests/*": ["tests/*"],
+      "@tests/*": ["tests/*"]
     }
   },
   "types": ["vite/client", "jest", "node", "@testing-library/jest-dom"],

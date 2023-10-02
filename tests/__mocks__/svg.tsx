@@ -1,6 +1,10 @@
 import React from 'react'
 
-const SvgrMock = React.forwardRef<never, any>((props, ref) => (
+type SvgProps = {
+  name?: string
+} & React.SVGProps<SVGSVGElement>
+
+const SvgrMock = React.forwardRef<never, SvgProps>((props, ref) => (
   <svg ref={ref} aria-label={props.name} {...props} />
 ))
 
