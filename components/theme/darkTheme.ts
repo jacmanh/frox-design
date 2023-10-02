@@ -25,11 +25,6 @@ export const darkTheme = {
           disabled: colors.dark[500]
         }
       },
-      placeholder: {
-        primary: {
-          default: colors.dark[500]
-        }
-      },
       background: {
         primary: {
           default: colors.violet,
@@ -80,8 +75,9 @@ export const darkTheme = {
         default: colors.light[0],
         active: colors.violet,
         background: {
-          default: colors.light[0],
-          active: shadeHexColor(colors.dark[200], 0.1)
+          default: colors.dark[0],
+          active: shadeHexColor(colors.dark[200], 0.1),
+          disabled: colors.dark[500]
         }
       }
     },

@@ -18,6 +18,12 @@ type Story = StoryObj<typeof Checkbox>
 
 export const Default: Story = {}
 
+export const DefaultChecked: Story = {
+  args: {
+    defaultChecked: true
+  }
+}
+
 export const WithLabel: Story = {
   args: {
     label: 'Label'

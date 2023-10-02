@@ -1,18 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  display: flex;
-
-  > label {
-    display: flex;
-    align-items: center;
-    gap: ${({ theme }) => theme.space.sm};
-    font-size: ${({ theme }) => theme.font.size.sm};
-  }
-`
-
 export const RealInput = styled.input`
-  visibility: hidden;
   position: absolute;
   opacity: 0;
 `
@@ -27,7 +15,9 @@ export const Input = styled.div`
   border-radius: ${({ theme }) => theme.size.borderRadius.sm};
   border: 2px solid ${({ theme }) => theme.forms.color.border.default};
   background-color: transparent;
-  transition: background-color 0.3s;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
 
   > span {
     display: flex;
@@ -43,6 +33,23 @@ export const Input = styled.div`
     > span {
       opacity: 1;
       visibility: visible;
+    }
+  }
+`
+
+export const Container = styled.div`
+  display: flex;
+
+  > label {
+    display: flex;
+    align-items: center;
+    gap: ${({ theme }) => theme.space.sm};
+    font-size: ${({ theme }) => theme.font.size.sm};
+  }
+
+  &:focus-within {
+    ${RealInput} + label > ${Input} {
+      border-color: ${({ theme }) => theme.forms.color.border.hover};
     }
   }
 `

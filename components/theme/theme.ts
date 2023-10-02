@@ -40,7 +40,8 @@ export const commonTheme = {
     borderRadius: {
       default: '0.5rem',
       sm: '0.25rem',
-      md: '0.5rem'
+      md: '0.5rem',
+      lg: '1rem'
     }
   },
   space: {

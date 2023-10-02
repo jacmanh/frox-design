@@ -15,7 +15,7 @@ export const lightTheme = {
           disabled: colors.light[300]
         },
         dim: {
-          default: colors.light[0],
+          default: colors.light[500],
           hover: colors.light[1000],
           disabled: colors.light[400]
         },
@@ -32,7 +32,7 @@ export const lightTheme = {
           disabled: colors.violet
         },
         dim: {
-          default: colors.light[500],
+          default: colors.light[200],
           hover: colors.light[0],
           disabled: colors.light[200]
         },
@@ -75,8 +75,9 @@ export const lightTheme = {
         default: colors.light[0],
         active: colors.violet,
         background: {
-          default: colors.light[0],
-          active: colors.light[200]
+          default: colors.light[100],
+          active: colors.light[200],
+          disabled: colors.light[200]
         }
       }
     },
