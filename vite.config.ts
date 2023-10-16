@@ -9,7 +9,9 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineConfig({
   plugins: [
     react(),
-    viteSvgr(),
+    viteSvgr({
+      exportAsDefault: true
+    }),
     dts({
       insertTypesEntry: true
     }),

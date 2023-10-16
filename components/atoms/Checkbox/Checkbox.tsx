@@ -1,6 +1,6 @@
 import { InputHTMLAttributes } from 'react'
 
-import { ReactComponent as CheckMarkIcon } from './assets/checkmark.svg'
+import CheckMarkIcon from './assets/checkmark.svg'
 import * as Styled from './Checkbox.styled'
 
 export type CheckboxProps = {
