@@ -33,7 +33,8 @@
     "prettier:format": "prettier --write .",
     "prettier:check": "prettier --check .",
     "test-storybook": "test-storybook",
-    "chromatic": "chromatic --exit-zero-on-changes"
+    "chromatic": "chromatic --exit-zero-on-changes",
+    "prepare": "build"
   },
   "packageManager": "pnpm@8.6.12",
   "dependencies": {
