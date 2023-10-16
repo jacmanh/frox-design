@@ -3,9 +3,10 @@ import styled, { css } from 'styled-components'
 
 export const Label = styled.label`
   display: block;
+  text-align: left;
   font-size: ${({ theme }) => theme.font.size.sm};
   color: ${({ theme }) => theme.forms.color.text.default};
-  margin: ${({ theme }) => theme.space.xs} 0;
+  margin: ${({ theme }) => theme.space.sm} 0;
 `
 
 export const Input = styled.input`
