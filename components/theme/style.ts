@@ -22,31 +22,37 @@ export const baseCss = css`
   h1 {
     font-size: ${({ theme }) => theme.font.size.header[1]};
     line-height: ${({ theme }) => theme.font.lineHeight.header[1]};
+    margin: 0;
   }
 
   h2 {
     font-size: ${({ theme }) => theme.font.size.header[2]};
     line-height: ${({ theme }) => theme.font.lineHeight.header[2]};
+    margin: 0;
   }
 
   h3 {
     font-size: ${({ theme }) => theme.font.size.header[3]};
     line-height: ${({ theme }) => theme.font.lineHeight.header[3]};
+    margin: 0;
   }
 
   h4 {
     font-size: ${({ theme }) => theme.font.size.header[4]};
     line-height: ${({ theme }) => theme.font.lineHeight.header[4]};
+    margin: 0;
   }
 
   h5 {
     font-size: ${({ theme }) => theme.font.size.header[5]};
     line-height: ${({ theme }) => theme.font.lineHeight.header[5]};
+    margin: 0;
   }
 
   h6 {
     font-size: ${({ theme }) => theme.font.size.header[6]};
     line-height: ${({ theme }) => theme.font.lineHeight.header[6]};
+    margin: 0;
   }
 `
 
