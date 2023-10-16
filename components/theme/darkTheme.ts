@@ -62,7 +62,9 @@ export const darkTheme = {
     }
   },
   background: {
-    primary: colors.dark[300]
+    body: colors.dark[100],
+    primary: colors.dark[200],
+    secondary: colors.dark[300]
   },
   forms: {
     error: {

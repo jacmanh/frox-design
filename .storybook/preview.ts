@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
    padding: 20px;
    border-radius: 10px;
    max-width: 300px;
-   background-color: ${({ theme }) => (theme.base === 'light' ? '#fff' : '#1F2128')}
+   background-color: ${({ theme }) => theme.background.secondary};
  }
 `
 

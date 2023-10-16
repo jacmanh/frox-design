@@ -62,7 +62,9 @@ export const lightTheme = {
     }
   },
   background: {
-    primary: colors.light[0]
+    body: colors.light[100],
+    primary: colors.light[0],
+    secondary: colors.light[0]
   },
   forms: {
     error: {
