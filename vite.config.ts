@@ -13,6 +13,7 @@ export default defineConfig({
       exportAsDefault: true
     }),
     dts({
+      include: ['components'],
       insertTypesEntry: true
     }),
     tsconfigPaths()

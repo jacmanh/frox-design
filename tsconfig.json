@@ -33,6 +33,6 @@
   },
   "types": ["vite/client", "jest", "node", "@testing-library/jest-dom"],
   "include": ["components", "tests"],
-  "exclude": ["node_modules", "dist"],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
