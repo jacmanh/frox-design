@@ -7,6 +7,10 @@ import { baseCss } from '../components/theme/style'
 
 const GlobalStyles = createGlobalStyle`
  ${baseCss}
+ 
+ h1, h2, h3, h4, h5, h6 {
+   color: black;
+ }
 
  #storybook-root {
    padding: 20px;

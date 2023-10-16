@@ -7,6 +7,7 @@ export const lightTheme = {
   ...commonTheme,
   color: {
     default: colors.light[500],
+    header: colors.light[0],
     interaction: {
       text: {
         primary: {

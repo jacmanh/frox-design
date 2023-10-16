@@ -7,6 +7,7 @@ export const darkTheme = {
   base: 'dark',
   color: {
     default: colors.dark[500],
+    header: colors.dark[1100],
     interaction: {
       text: {
         primary: {
