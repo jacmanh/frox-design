@@ -39,9 +39,9 @@ export const lightTheme = {
           disabled: colors.light[200]
         },
         ghost: {
-          default: colors.light[0],
-          hover: colors.light[0],
-          disabled: colors.light[0]
+          default: 'transparent',
+          hover: 'transparent',
+          disabled: 'transparent'
         }
       },
       border: {

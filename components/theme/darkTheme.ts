@@ -22,9 +22,9 @@ export const darkTheme = {
           disabled: colors.dark[800]
         },
         ghost: {
-          default: colors.dark[0],
-          hover: colors.dark[0],
-          disabled: colors.dark[500]
+          default: colors.dark[1100],
+          hover: colors.dark[1100],
+          disabled: colors.dark[700]
         }
       },
       background: {
@@ -39,9 +39,9 @@ export const darkTheme = {
           disabled: colors.dark[900]
         },
         ghost: {
-          default: colors.dark[1100],
-          hover: colors.dark[1100],
-          disabled: colors.dark[1100]
+          default: 'transparent',
+          hover: 'transparent',
+          disabled: 'transparent'
         }
       },
       border: {
@@ -56,8 +56,8 @@ export const darkTheme = {
           disabled: colors.dark[900]
         },
         ghost: {
-          default: colors.dark[500],
-          hover: shadeHexColor(colors.dark[500], 0.5),
+          default: shadeHexColor(colors.dark[200], 0.1),
+          hover: shadeHexColor(colors.dark[500], 0.1),
           disabled: colors.dark[500]
         }
       }
