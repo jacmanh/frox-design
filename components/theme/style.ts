@@ -1,8 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components'
 
 export const baseCss = css`
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-
   * {
     box-sizing: border-box;
   }
