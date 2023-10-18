@@ -6,7 +6,7 @@ export const Label = styled.label`
   text-align: left;
   font-size: ${({ theme }) => theme.font.size.sm};
   color: ${({ theme }) => theme.forms.color.text.default};
-  margin: ${({ theme }) => theme.space.sm} 0;
+  margin-bottom: ${({ theme }) => theme.space.sm};
 `
 
 export const Input = styled.input`
