@@ -8,6 +8,7 @@ export const darkTheme = {
   color: {
     default: colors.dark[500],
     header: colors.dark[1100],
+    link: colors.violet,
     interaction: {
       text: {
         primary: {

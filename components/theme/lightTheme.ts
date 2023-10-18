@@ -8,6 +8,7 @@ export const lightTheme = {
   color: {
     default: colors.light[500],
     header: colors.light[0],
+    link: colors.violet,
     interaction: {
       text: {
         primary: {

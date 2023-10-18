@@ -17,6 +17,11 @@ export const baseCss = css`
     }
   }
 
+  a {
+    color: ${({ theme }) => theme.color.link};
+    text-decoration: none;
+  }
+
   h1 {
     color: ${({ theme }) => theme.color.header};
     font-size: ${({ theme }) => theme.font.size.header[1]};
