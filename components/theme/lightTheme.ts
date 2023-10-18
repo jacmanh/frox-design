@@ -22,8 +22,8 @@ export const lightTheme = {
           disabled: colors.light[400]
         },
         ghost: {
-          default: colors.light[1100],
-          hover: colors.light[1100],
+          default: colors.light[500],
+          hover: colors.light[500],
           disabled: colors.light[700]
         }
       },

@@ -2,6 +2,7 @@
 export { lightTheme } from './theme/lightTheme'
 export { darkTheme } from './theme/darkTheme'
 export { colors } from './theme/colors'
+export type { Theme } from './theme/theme'
 
 export { GlobalStyles } from './theme/style'
 

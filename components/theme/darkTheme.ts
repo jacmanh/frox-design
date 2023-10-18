@@ -22,8 +22,8 @@ export const darkTheme = {
           disabled: colors.dark[800]
         },
         ghost: {
-          default: colors.dark[1100],
-          hover: colors.dark[1100],
+          default: colors.dark[500],
+          hover: colors.dark[500],
           disabled: colors.dark[700]
         }
       },
