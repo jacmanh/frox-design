@@ -15,7 +15,6 @@ const GlobalStyles = createGlobalStyle`
  #storybook-root {
    padding: 20px;
    border-radius: 10px;
-   max-width: 300px;
    background-color: ${({ theme }) => theme.background.secondary};
  }
 `
