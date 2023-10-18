@@ -15,9 +15,6 @@ type Story = StoryObj<typeof Grid>
 const Item = ({ children }: { children?: ReactNode }) => (
   <div
     style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
       height: '200px',
       backgroundColor: '#eee'
     }}
@@ -27,7 +24,7 @@ const Item = ({ children }: { children?: ReactNode }) => (
 )
 export const Default: Story = {
   render: () => (
-    <Grid $gap="1em" $autoFlow="column">
+    <Grid $gap="sm" $autoFlow="column">
       <Item />
       <Item />
       <Item />
@@ -37,7 +34,7 @@ export const Default: Story = {
 
 export const WithGridItem: Story = {
   render: () => (
-    <Grid $gap="1em" $autoFlow="column">
+    <Grid $gap="md" $autoFlow="column">
       <GridItem>
         <Item />
       </GridItem>
