@@ -27,7 +27,7 @@ const Item = ({ children }: { children?: ReactNode }) => (
 )
 export const Default: Story = {
   render: () => (
-    <Flex $gap="1em">
+    <Flex $gap="sm">
       <Item />
       <Item />
       <Item />

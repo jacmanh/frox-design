@@ -1,3 +1,4 @@
+import { commonTheme } from '@theme/theme.ts'
 import styled from 'styled-components'
 
 export type FlexProps = {
@@ -5,7 +6,7 @@ export type FlexProps = {
   $justify?: string
   $align?: string
   $wrap?: string
-  $gap?: string
+  $gap?: keyof (typeof commonTheme)['space']
   $grow?: number
   $shrink?: number
 }
@@ -16,7 +17,7 @@ export const Flex = styled.div<FlexProps>`
   justify-content: ${({ $justify }) => $justify};
   align-items: ${({ $align }) => $align};
   flex-wrap: ${({ $wrap }) => $wrap};
-  gap: ${({ $gap }) => $gap};
+  gap: ${({ $gap }) => $gap && commonTheme.space[$gap]};
   flex-grow: ${({ $grow }) => $grow};
   flex-shrink: ${({ $shrink }) => $shrink};
 `
