@@ -20,6 +20,11 @@ export const baseCss = css`
   a {
     color: ${({ theme }) => theme.color.link};
     text-decoration: none;
+
+    &:focus {
+      outline: none;
+      text-decoration: underline;
+    }
   }
 
   h1 {
