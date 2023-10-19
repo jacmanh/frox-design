@@ -7,7 +7,7 @@ export const lightTheme = {
   ...commonTheme,
   color: {
     default: colors.light[500],
-    header: colors.light[0],
+    header: colors.light[1100],
     link: colors.violet,
     interaction: {
       text: {
@@ -22,8 +22,8 @@ export const lightTheme = {
           disabled: colors.light[400]
         },
         ghost: {
-          default: colors.light[500],
-          hover: colors.light[500],
+          default: colors.light[1100],
+          hover: colors.light[1100],
           disabled: colors.light[700]
         }
       },
@@ -66,12 +66,11 @@ export const lightTheme = {
   background: {
     body: colors.light[100],
     primary: colors.light[0],
-    secondary: colors.light[0]
+    secondary: colors.light[100]
   },
   forms: {
     error: {
-      text: colors.light[0],
-      background: colors.red,
+      text: colors.red,
       border: colors.red
     },
     choices: {

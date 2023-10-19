@@ -8,7 +8,7 @@ export type ButtonProps = {
   $size?: 'sm' | 'md' | 'lg'
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
-export const Button = styled.button.attrs({ type: 'button' })<ButtonProps>`
+export const Button = styled.button<ButtonProps>`
   font-family: inherit;
   font-weight: ${({ theme }) => theme.font.weight.bold};
   font-size: ${({ theme }) => theme.font.size.md};
@@ -46,6 +46,11 @@ const defaultCss = css`
     background-color: ${({ theme }) => theme.color.interaction.background.primary.disabled};
     box-shadow: inset 0 0 0 1px ${({ theme }) => theme.color.interaction.border.primary.disabled};
   }
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 4px ${({ theme }) => theme.color.interaction.border.primary.hover};
+  }
 `
 
 const dimCss = css`
@@ -63,6 +68,11 @@ const dimCss = css`
     color: ${({ theme }) => theme.color.interaction.text.dim.disabled};
     background-color: ${({ theme }) => theme.color.interaction.background.dim.disabled};
     box-shadow: inset 0 0 0 1px ${({ theme }) => theme.color.interaction.border.dim.disabled};
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 4px ${({ theme }) => theme.color.interaction.border.dim.hover};
   }
 `
 
@@ -82,6 +92,11 @@ const ghostCss = css`
     color: ${({ theme }) => theme.color.interaction.text.ghost.disabled};
     background-color: ${({ theme }) => theme.color.interaction.background.ghost.disabled};
     box-shadow: inset 0 0 0 1px ${({ theme }) => theme.color.interaction.border.ghost.disabled};
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 4px ${({ theme }) => theme.color.interaction.border.ghost.hover};
   }
 `
 

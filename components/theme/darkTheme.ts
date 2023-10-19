@@ -57,7 +57,7 @@ export const darkTheme = {
         },
         ghost: {
           default: shadeHexColor(colors.dark[200], 0.1),
-          hover: shadeHexColor(colors.dark[500], 0.1),
+          hover: shadeHexColor(colors.dark[300], 0.1),
           disabled: colors.dark[500]
         }
       }
@@ -70,8 +70,7 @@ export const darkTheme = {
   },
   forms: {
     error: {
-      text: colors.light[0],
-      background: colors.red,
+      text: colors.red,
       border: colors.red
     },
     choices: {
