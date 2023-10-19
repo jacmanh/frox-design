@@ -39,6 +39,8 @@ export const Input = styled.div`
 
 export const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  text-align: left;
 
   > label {
     display: flex;
@@ -52,4 +54,11 @@ export const Container = styled.div`
       border-color: ${({ theme }) => theme.forms.color.border.hover};
     }
   }
+`
+
+export const Error = styled.div`
+  flex-basis: 100%;
+  color: ${({ theme }) => theme.forms.error.text};
+  font-size: ${({ theme }) => theme.font.size.xs};
+  margin-left: calc(20px + ${({ theme }) => theme.space.sm});
 `
