@@ -3,7 +3,9 @@ import SVG from '*.svg'
 import Checkmark from './assets/checkmark.svg'
 import Email from './assets/email.svg'
 import Eye from './assets/eye.svg'
+import Moon from './assets/moon.svg'
 import Phone from './assets/phone.svg'
+import Sun from './assets/sun.svg'
 import User from './assets/user.svg'
 
 export const IconComponents: Record<IconList, typeof SVG> = {
@@ -11,7 +13,9 @@ export const IconComponents: Record<IconList, typeof SVG> = {
   email: Email,
   eye: Eye,
   phone: Phone,
-  checkmark: Checkmark
+  checkmark: Checkmark,
+  moon: Moon,
+  sun: Sun
 }
 
 export enum IconList {
@@ -19,5 +23,7 @@ export enum IconList {
   email = 'email',
   eye = 'eye',
   phone = 'phone',
-  checkmark = 'checkmark'
+  checkmark = 'checkmark',
+  moon = 'moon',
+  sun = 'sun'
 }
