@@ -24,12 +24,10 @@ export const Input = styled.input`
 `
 
 export const Error = styled.div`
+  text-align: left;
   color: ${({ theme }) => theme.forms.error.text};
   font-size: ${({ theme }) => theme.font.size.xs};
-  background-color: ${({ theme }) => theme.forms.error.background};
   padding: ${({ theme }) => `${theme.space.sm} ${theme.space.default}`};
-  border-bottom-left-radius: ${({ theme }) => theme.size.borderRadius.default};
-  border-bottom-right-radius: ${({ theme }) => theme.size.borderRadius.default};
 `
 
 export const Icon = styled(IconComponent)`
@@ -50,6 +48,14 @@ export const Container = styled.div<{ $hasError: boolean }>`
   padding: 0 ${({ theme }) => theme.space.default};
   transition: box-shadow 0.1s;
 
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    height: 70%;
+    -webkit-text-fill-color: ${({ theme }) => theme.forms.color.text.default};
+    -webkit-box-shadow: 0 0 0 40rem ${({ theme }) => theme.background.primary} inset;
+  }
+
   &:focus-within {
     box-shadow: inset 0 0 0 4px ${({ theme }) => theme.forms.color.border.hover};
 
@@ -61,8 +67,6 @@ export const Container = styled.div<{ $hasError: boolean }>`
   ${({ $hasError }) =>
     $hasError &&
     css`
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
       box-shadow: inset 0 0 0 1px ${({ theme }) => theme.forms.error.border};
 
       &:focus-within {
