@@ -8,6 +8,7 @@ export { GlobalStyles } from './theme/style'
 
 /* COMPONENTS */
 export { Button } from './atoms/Button/Button'
+export { Card } from './atoms/Card/Card'
 export { Checkbox } from './atoms/Checkbox/Checkbox'
 export { Radio } from './atoms/Radio/Radio'
 export { Toggle } from './atoms/Toggle/Toggle'

@@ -17,6 +17,10 @@ export const baseCss = css`
     }
   }
 
+  body {
+    margin: 0;
+  }
+
   a {
     color: ${({ theme }) => theme.color.link};
     text-decoration: none;
